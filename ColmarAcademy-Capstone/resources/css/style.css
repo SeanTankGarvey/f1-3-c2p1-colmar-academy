@@ -1,0 +1,584 @@
+/* Universal Styles */
+html {
+	font-size: 16px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #555;
+}
+body {
+	width: 100%;
+	box-sizing: border-box;
+	border-left: 2px solid #AAA;
+	border-left: 0.125rem solid #AAA;
+	border-right: 2px solid #AAA;
+	border-right: 0.125rem solid #AAA;
+	border-bottom: 2px solid #AAA;
+	border-bottom: 0.125rem solid #AAA;
+}
+/* Styles for Header */
+header {
+	height: 64px;
+	height: 4rem;
+	padding: 0 24px;
+	padding: 0 1.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+header img {
+	height: 32px;
+	height: 2rem;
+}
+header .school-title {
+	font-size: 18px;
+	font-size: 1.125rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+header .school-title .colmar {
+	font-weight: 700;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+header .school-title .academy {
+	font-weight: 400;
+	font-size: 20px;
+	font-size: 1.25rem;
+	color: #CCC;
+}
+header .small-menu {
+	display: none;
+}
+header a {
+	margin-left: 16px;
+	margin-left: 1rem;
+	font-size: 16px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #555;
+}
+@media only screen and (max-width: 540px) {
+	header .main-menu {
+		display: none;
+	}
+	header a {
+		margin-left: 0;
+	}
+	header {
+		display: block;
+	}
+	header .small-menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		height: 100%;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+}
+/* Styles for Banner Section */
+.banner {
+	background-color: #CCC;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 32px 0;
+	padding: 2rem 0;
+}
+/* The following four rules apply to both the banner section and other sections, while the other rules only apply to the banner section. */
+/* This rule applies to multiple, other sections too. */
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+/* This rule also applies to multiple, other sections too. */
+.forty {
+	width: 40%;
+	box-sizing: border-box;
+}
+/* This rule also applies to multiple, other sections too. */
+.sixty {
+	width: 60%;
+}
+/* This rule also applies to the Main Section too. */
+.sixty img {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 24px;
+	padding: 0 1.5rem;
+}
+.banner .flex {
+	align-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
+	height: 100%;
+	padding-right: 72px;
+	padding-right: 4.5rem;
+}
+.learn {
+	font-size: 48px;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: left;
+	padding-top: 32px;
+	padding-top: 2rem;
+	width: 100%;
+}
+.more {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.4;
+	padding-top: 32px;
+	padding-top: 2rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.5rem;
+	text-align: left;
+	width: 100%;
+}
+.banner a {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	font-size: 1.25rem;
+	color: white;
+	background-color: #555;
+	padding: 8px 0;
+	padding: 0.5rem 0;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+@media only screen and (max-width: 540px) {
+	.banner {
+		display: block;
+		padding-top: 0;
+		padding-bottom: 32px;
+		padding-bottom: 2rem;
+	}
+	.banner .sixty {
+		display: block;
+		width: 100%;
+	}
+	.banner .sixty img {
+		display: block;
+	    width: 100%;
+		height: auto;
+	    padding: 0;
+    }
+    .banner .flex {
+		display: block;
+		padding: 0 16px;
+		padding: 0 1rem;
+    }
+	.banner .forty {
+		display: block;
+	    height: 100%;
+		padding: 0;
+	}
+    .banner a {
+		font-weight: 500;
+		background-color: #999;
+	}
+}
+/* Style for a custom breakpoint (where the primary heading overflows its container) */
+@media only screen and (min-width: 540px) and (max-width: 770px) {
+	.learn {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
+	.banner .flex {
+		padding-right: 16px;
+		padding-right: 1rem;
+	}
+	.more {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+/* Style to make the image resize horizontally and stop shrinking vertically (between 540px and 770px in screen width) */
+	.banner .sixty img {
+		height: 100%;
+	}
+}
+/* Styles for Main Section - many of these apply to Thesis Section too */
+.main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 32px 0;
+	padding: 2rem 0;
+}
+h2 {
+	font-size: 36px;
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+h5 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+p {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+.sixty h2 {
+	padding-top: 32px;
+	padding-top: 2rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.5rem;
+	padding-left: 24px;
+	padding-left: 1.5rem;
+}
+.sixty span {
+	padding-left: 24px;
+	padding-left: 1.5rem;
+	font-weight: 500;
+}
+.sixty p {
+	padding-bottom: 32px;
+	padding-bottom: 2rem;
+	padding-left: 24px;
+	padding-left: 1.5rem;
+	padding-right: 24px;
+	padding-right: 1.5rem;
+}
+.side1 {
+	width: 35%;
+/* Personally, I think the height looks better at 35%, making the images perfect squares, but the wireframe specifies auto for height. */
+  /*height: 35%;*/
+	height: auto;
+	padding: 16px;
+	padding: 1rem;
+}
+.side2 {
+	width: 65%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.side2 a {
+	text-decoration: none;
+	font-weight: 500;
+	color: blue;
+}
+.side2 p {
+	padding: 8px 0;
+	padding: 0.5rem 0;
+}
+.mobile1 {
+	display: none;
+}
+.orientation,
+.campus {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	border: 1px solid #CCC;
+	border: 0.0625rem solid #CCC;
+}
+.lecture {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #CCC;
+	border: 1px solid #CCC;
+	border: 0.0625rem solid #CCC;
+}
+@media only screen and (max-width: 540px) {
+	.sixty {
+		display: none;
+	}
+	.side1 {
+		display: none;
+	}
+	.mobile1 {
+		display: block;
+		padding: 16px;
+		padding: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.side2 {
+		padding-left: 32px;
+		padding-left: 2rem;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.orientation,
+	.campus,
+	.lecture {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		padding-bottom: 32px;
+		padding-bottom: 2rem;
+		background-color: white;
+	}
+	.forty {
+		width: 100%;
+	}
+	.main {
+		padding: 0;
+	}
+}
+/* Styles for a custom breakpoint for overflowing heading(s) */
+@media only screen and (min-width: 540px) and (max-width: 610px) {
+	.side2 h5 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.side2 p {
+		font-size: 10px;
+		font-size: 0.625rem;
+	}
+}
+/* Styles for Courses Section */
+.courses {
+	background-color: #CCC;
+}
+.courses h2 {
+	text-align: center;
+	padding-top: 32px;
+	padding-top: 2rem;
+}
+.courses .flex {
+	padding: 16px 56px;
+	padding: 1rem 3.5rem;
+}
+.item {
+	padding: 16px;
+	padding: 1rem;
+	width: 30%;
+}
+.item img {
+	max-width: 100%;
+	height: auto;
+}
+.item h5 {
+	padding-top: 16px;
+	padding-top: 1rem;
+	padding-left: 16px;
+	padding-left: 1rem;
+}
+.item p {
+	padding-left: 16px;
+	padding-left: 1rem;
+	font-weight: 300;
+}
+.course {
+	padding-top: 8px;
+	padding-top: 0.5rem;
+	padding-bottom: 8px;
+	padding-bottom: 0.5rem;
+}
+.description {
+	padding-bottom: 24px;
+	padding-bottom: 1.5rem;
+}
+.background {
+	background-color: white;
+	height: 160px;
+	height: 10rem;
+}
+.mobile {
+	display: none;
+}
+.courses .flex {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+/* Style for text overflowing/spilling beyond containers of flex-items when resizing */
+@media only screen and (max-width: 897px) {
+	.background {
+		overflow: hidden;
+	}
+}
+@media only screen and (max-width: 540px) {
+/* This style applies to other sections as well */
+	.desktop,
+    .item,
+    .flex	{
+		display: none;
+	}
+	.container {
+		margin: 16px 16px 32px 16px;
+		margin: 1rem 1rem 2rem 1rem;
+	}
+	.courses .background {
+		background-color: #CCC;
+		margin-bottom: 8px;
+		margin-bottom: 0.5rem;
+		height: 60px;
+		height: 3.75rem;
+	}
+	.courses {
+		background-color: #FFF;
+		border-top: 1px solid #CCC;
+		border-top: 0.0625rem solid #CCC;
+	}
+	.mobile {
+		display: block; 
+	}
+	.title {
+		padding: 16px 16px 24px 16px;
+		padding: 1rem 1rem 1.5rem 1rem;
+	}
+}
+/* Styles for Thesis Section */
+.thesis {
+	padding: 32px 0;
+	padding: 2rem 0;
+}	
+.thesis h2 {
+	text-align: center;
+	padding-bottom: 32px;
+	padding-bottom: 2rem;
+}
+.sixty video {
+	padding: 0 24px;
+	padding: 0 1.5rem;
+	box-sizing: border-box;
+}
+.sixty h5 {
+	padding: 24px 24px 8px 24px;
+	padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+.mobile-video {
+	display: none;
+}
+.now,
+.fisma {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.thesis .forty .fisma:first-child {
+	background-color: #CCC
+}
+@media only screen and (max-width: 540px) {
+	.mobile-video {
+		display: block;
+		padding: 0;
+	}
+	.thesis h2 {
+		padding-bottom: 16px;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid #CCC;
+		border-bottom: 0.125rem solid #CCC;
+	}
+	.thesis {
+		padding-top: 32px;
+		padding-top: 2rem;
+		padding-bottom: 24px;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid #CCC;
+		border-top: 0.0625rem solid #CCC;
+	}
+}
+/* Styles for Footer */
+footer {
+	padding: 16px 24px 40px 24px;
+	padding: 1rem 1.5rem 2.5rem 1.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border-top: 1px solid #CCC;
+	border-top: 0.0625rem solid #CCC;
+}
+footer a {
+	margin-left: 16px;
+	margin-left: 1rem;
+	font-size: 16px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #555;
+}
+@media only screen and (max-width: 540px) {
+	footer span {
+		font-weight: 500;
+	}
+	footer nav {
+		display: none;
+	}
+	footer {
+		padding: 40px 24px 16px 24px;
+		padding: 2.5rem 1.5rem 1rem 1.5rem;
+		border-top: 2px solid #CCC;
+		border-top: 0.125rem solid #CCC;
+	}
+}
+/* Even though website's minimum width is normally ~417px (when resizing the screen), with DevTools open the min-width can reduce to only 150px */
+/* All Styles for Very Small Screens */
+@media only screen and (max-width: 260px) {
+	header {
+		padding: 0;
+	}
+	.banner .learn {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+	.banner .more {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.side2 {
+		-webkit-box-pack: left;
+		    -ms-flex-pack: left;
+		        justify-content: left;
+		padding-left: 0;
+	}
+	.container {
+		margin: 16px 0 32px 0;
+		margin: 1rem 0 2rem 0;
+	}
+	.courses .background {
+		height: 80px;
+		height: 5rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
