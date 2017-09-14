@@ -268,12 +268,16 @@ blockquote {
 	padding-right: 1.5rem;
 }
 .side1 {
-	width: 35%;
+	width: 100%;
 /* Personally, I think the height looks better at 35%, making the images perfect squares, but the wireframe specifies auto for height. */
-  /*height: 35%;*/
+    /*height: 35%;*/
 	height: auto;
+	box-sizing: border-box;
 	padding: 16px;
 	padding: 1rem;
+}
+.forty figure {
+	width: 35%;
 }
 .side2 {
 	width: 65%;
@@ -322,6 +326,9 @@ blockquote {
 	}
 	.side1 {
 		display: none;
+	}
+	.forty figure {
+		width: 100%;
 	}
 	.mobile1 {
 		display: block;
