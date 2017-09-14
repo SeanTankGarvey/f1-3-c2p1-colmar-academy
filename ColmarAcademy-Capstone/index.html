@@ -15,6 +15,7 @@
   <link rel="manifest" href="./manifest.json">
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <!-- Body Section, i.e. The Entire Webpage, including the header, banner (section), main section, courses section, thesis section, & the footer -->
@@ -26,146 +27,156 @@
 	  <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo. Icon of a Gryphon." />
 	  <span class="colmar" role="presentation">COLMAR</span>
 	  <span class="academy" role="presentation">ACADEMY</span>
-    </div>
-    <nav class="main-menu">
+	</div>
+	<nav class="main-menu">
 	  <a href="#">On campus</a>
 	  <a href="#">Online</a>
 	  <a href="#">For companies</a>
 	  <a href="#">Sign in</a>
-    </nav>
-    <nav class="small-menu">
-          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo. Icon of a Gryphon." />
+	</nav>
+	<nav class="small-menu">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo. Icon of a Gryphon." />
 	  <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus logo. Icon of a (college) classroom chair." /></a>
-          <a href="#"><img src="./resources/images/ic-online.svg" alt="Online logo. Icon of a computer." /></a>
-          <a href="#"><img src="./resources/images/ic-login.svg" alt="Login logo. Icon of (upper-body of) a person." /></a>  
-    </nav>
+      <a href="#"><img src="./resources/images/ic-online.svg" alt="Online logo. Icon of a computer." /></a>
+      <a href="#"><img src="./resources/images/ic-login.svg" alt="Login logo. Icon of (upper-body of) a person." /></a>  
+	</nav>
   </header>
   
   <!-- Banner Section -->
   <div class="banner" role="region">
-    <div class="sixty" role="presentation">
+    <figure class="sixty">
 	  <img src="./resources/images/banner.jpg" alt="Three students studying outside at a picnic table." />
-    </div>
-    <div class="forty" role="region">
+	</figure>
+	<div class="forty" role="region">
 	  <div class="flex" role="presentation">
 	    <h1 class="learn">Learn something new everyday</h1>
 	    <h5 class="more">Each day your mind will be challenged to expand to new dimensions</h5>
 	    <a href="#start">Start here</a>
 	  </div>
-    </div>
+	</div>
   </div>
   
   <!-- Main Section -->
   <div class="main" role="region">
     <div class="sixty" role="presentation">
-	  <img src="./resources/images/information-main.jpg" alt="Image of a man reading." />
-	  <h2>It doesn't hurt to keep practicing</h2>
-	  <blockquote>&quot;You don't need to justify your love, you don't need to explain your love, you just need to practice your love. Practice creates the master.&quot;</blockquote>
-	  <span role="presentation">Emanuel, Sr. Strategist at Hiring.com</span>
-    </div>
-    <div class="forty" role="region">
-	  <div class="orientation" role="presentation">
-	        <img class="side1" src="./resources/images/information-orientation.jpg" alt="Students walking on a path (during orientation)." />
-		<img class="mobile1" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking on a path (during orientation)." />
-		<div class="side2" role="presentation">
+	  <figure>
+	    <img src="./resources/images/information-main.jpg" alt="Image of a man reading." />
+      </figure>
+	  <figcaption>
+	    <h2>It doesn't hurt to keep practicing</h2>
+	    <blockquote>&quot;You don't need to justify your love, you don't need to explain your love, you just need to practice your love. Practice creates the master.&quot;</blockquote>
+	    <span arial-label="(Hypothetical) Author of Quote">Emanuel, Sr. Strategist at Hiring.com</span>
+	  </figcaption>
+	</div>
+	<div class="forty" role="region">
+	  <div class="orientation" role="none">
+	    <figure>
+		  <img class="side1" src="./resources/images/information-orientation.jpg" alt="Students walking on a path (during orientation)." />
+		  <img class="mobile1" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking on a path (during orientation)." />
+		</figure>
+		<figcaption class="side2">
 		  <h5>Orientation date</h5>
 		  <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm.</p>
 		  <a href="#">Read more</a>
-		</div>
+		</figcaption>
 	  </div>
-	  <div class="campus" role="presentation">
-	        <img class="side1" src="./resources/images/information-campus.jpg" alt="Students in a classroom (on a college campus)." />
-		<img class="mobile1" src="./resources/images/information-campus-mobile.jpg" alt="Students in a classroom (on a college campus)." />
-		<div class="side2" role="presentation">
+	  <div class="campus" role="none">
+	    <figure>
+		  <img class="side1" src="./resources/images/information-campus.jpg" alt="Students in a classroom (on a college campus)." />
+		  <img class="mobile1" src="./resources/images/information-campus-mobile.jpg" alt="Students in a classroom (on a college campus)." />
+		</figure>
+		<figcaption class="side2">
 		  <h5>Our campus</h5>
 		  <p>Find which campus is close by you.</p>
 		  <a href="#">Read more</a>
-		</div>
+		</figcaption>
 	  </div>
-	  <div class="lecture" role="presentation">
-	        <img class="side1" src="./resources/images/information-guest-lecture.jpg" alt="Image of a guest lecturer (Oliver Sack)." />
-		<img class="mobile1" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Image of a guest lecturer (Oliver Sack)." />
-		<div class="side2" role="presentation">
+	  <div class="lecture" role="none">
+	    <figure>
+		  <img class="side1" src="./resources/images/information-guest-lecture.jpg" alt="Image of a guest lecturer (Oliver Sack)." />
+		  <img class="mobile1" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Image of a guest lecturer (Oliver Sack)." />
+		</figure>
+		<figcaption class="side2">
 		  <h5>Our guest lecture</h5>
 		  <p>Join a keynote with Oliver Sack about music in medical treatment.</p>
 		  <a href="#">Read more</a>
-		</div>
+		</figcaption>
 	  </div>
-    </div>  
+	</div>  
   </div>
   
   <!-- Courses (i.e. Start learning) Section -->
   <div class="courses" role="region">
-        <h2 id="start">Start learning</h2>
+    <h2 id="start">Start learning</h2>
 	<!-- Mobile Container with headings for Mobile View/Responsive Screen -->
 	<div class="mobile container" role="region">
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Software Engineering</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Software Engineering</h5>
 	  </div>
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Computer art</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Computer art</h5>
 	  </div>
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Design</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Design</h5>
 	  </div>
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Data</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Data</h5>
 	  </div>
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Business</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Business</h5>
 	  </div>
-	  <div class="mobile background" role="presentation">
-	    <h5 class="mobile title">Marketing</h5>
+	  <div class="background" role="presentation">
+	    <h5 class="title">Marketing</h5>
 	  </div>
 	</div>
 	<!-- Flex Container for Desktop View/Static Screen -->
 	<div class="flex" role="region">
-	  <div class="item software" role="presentation">
-	        <img class="desktop" src="./resources/images/course-software.jpg" alt="Image of software documentation on a computer screen." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Software Engineering</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">Web Development, Mobile Development, iOT, APIs</p>
+	  <div class="desktop item software" role="presentation">
+	    <img src="./resources/images/course-software.jpg" alt="Image of software documentation on a computer screen." />
+		<div class="background" role="presentation">
+		  <h5>Software Engineering</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">Web Development, Mobile Development, iOT, APIs</p>
 		</div>
 	  </div>
-	  <div class="item computer" role="presentation">
-	        <img class="desktop" src="./resources/images/course-computer-art.jpg" alt="Image of cell phone being pressed." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Computer art</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+	  <div class="desktop item computer" role="presentation">
+	    <img src="./resources/images/course-computer-art.jpg" alt="Image of cell phone being pressed." />
+		<div class="background" role="presentation">
+		  <h5>Computer art</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
 		</div>
 	  </div>
-	  <div class="item design" role="presentation">
-	        <img class="desktop" src="./resources/images/course-design.jpg" alt="Image of person taking a photograph with a high-quality camera." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Design</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">User Experience Design, User Research, Visual Design</p>
+	  <div class="desktop item design" role="presentation">
+	    <img src="./resources/images/course-design.jpg" alt="Image of person taking a photograph with a high-quality camera." />
+		<div class="background" role="presentation">
+		  <h5>Design</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">User Experience Design, User Research, Visual Design</p>
 		</div>
 	  </div>
-	  <div class="item data" role="presentation">
-	        <img class="desktop" src="./resources/images/course-data.jpg" alt="Image of graphs with data on a laptop screen." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Data</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">Data Science, Big Data, SQL, Data Visualization</p>
+	  <div class="desktop item data" role="presentation">
+	    <img src="./resources/images/course-data.jpg" alt="Image of graphs with data on a laptop screen." />
+		<div class="background" role="presentation">
+		  <h5>Data</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">Data Science, Big Data, SQL, Data Visualization</p>
 		</div>
 	  </div>
-	  <div class="item business" role="presentation">
-	        <img class="desktop" src="./resources/images/course-business.jpg" alt="Image of a chessboard." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Business</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">Product Development, Business Development, Startup</p>
+	  <div class="desktop item business" role="presentation">
+	    <img src="./resources/images/course-business.jpg" alt="Image of a chessboard." />
+		<div class="background" role="presentation">
+		  <h5>Business</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">Product Development, Business Development, Startup</p>
 		</div>
 	  </div>
-	  <div class="item marketing" role="presentation">
-	        <img class="desktop" src="./resources/images/course-marketing.jpg" alt="Image of a smartwatch in use." />
-		<div class="desktop background" role="presentation">
-		  <h5 class="desktop">Marketing</h5>
-		  <p class="desktop course">COURSES</p>
-		  <p class="desktop description">Analytics, Content Marketing, Mobile Marketing</p>
+	  <div class="desktop item marketing" role="presentation">
+	    <img src="./resources/images/course-marketing.jpg" alt="Image of a smartwatch in use." />
+		<div class="background" role="presentation">
+		  <h5>Marketing</h5>
+		  <p class="course">COURSES</p>
+		  <p class="description">Analytics, Content Marketing, Mobile Marketing</p>
 		</div>
 	  </div>
 	</div>
@@ -174,47 +185,55 @@
   <!-- Thesis (exhibits) Section -->
   <div class="thesis" role="region">
     <h2>Thesis exhibits</h2>
-    <video class="mobile-video" width="100%" height="auto" controls role="application">
-        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-    Your browser does not support HTML5-enabled video(s).
-    </video>
-    <div class="flex" role="presentation">
-      <div class="sixty" role="presentation">
-        <video width="100%" height="auto" controls role="application">
-            <source src="./resources/videos/thesis.mp4" type="video/mp4">
-	Your browser does not support HTML5-enabled video(s).
-	</video>
-	<h5>Reimagine urban</h5>
-        <blockquote>&quot;A redesign of skyscrapers using an array of offset windows.&quot;</blockquote>
-      </div>
-      <div class="desktop forty" role="presentation">
+    <figure class="mobile-video">
+	  <video width="100%" height="auto" controls role="application">
+	    <source src="./resources/videos/thesis.mp4" type="video/mp4">
+	  Your browser does not support HTML5-enabled video(s).
+	  </video>
+	</figure>
+	<div class="flex" role="presentation">
+	  <figure class="sixty">
+	    <video width="100%" height="auto" controls role="application">
+		  <source src="./resources/videos/thesis.mp4" type="video/mp4">
+		Your browser does not support HTML5-enabled video(s).
+		</video>
+	    <figcaption>
+		  <h5>Reimagine urban</h5>
+		  <blockquote>&quot;A redesign of skyscrapers using an array of offset windows.&quot;</blockquote>
+		</figcaption>
+	  </figure>
+	  <div class="desktop forty" role="presentation">
 	    <div class="fisma" role="presentation">
-		<img class="side1" src="./resources/images/thesis-fisma.jpg" alt="Image of designs being sketched." />
-		<div class="side2">
+		  <figure>
+		    <img class="side1" src="./resources/images/thesis-fisma.jpg" alt="Image of designs being sketched." />
+		  </figure>
+		  <figcaption class="side2">
 		    <h5>Fisma: Design and Prototype</h5>
-		    <p>Designer showcase of new prototype product</p>
+			<p>Designer showcase of new prototype product</p>
+		  </figcaption>
 		</div>
-            </div>
-	    <div class="now" role="presentation">
-	        <img class="side1" src="./resources/images/thesis-now-and-then.jpg" alt="Image of New York City." />
-		<div class="side2" role="presentation">
+		<div class="now" role="presentation">
+		  <figure>
+		    <img class="side1" src="./resources/images/thesis-now-and-then.jpg" alt="Image of New York City." />
+		  </figure>
+		  <figcaption class="side2" role="presentation">
 		    <h5>Now and then</h5>
-		    <p>Research study about New York</p>
+			<p>Research study about New York</p>
+		  </figcaption>
 		</div>
-	    </div>
-        </div>
-    </div>
+	  </div>
+	</div>
   </div>
   
   <!-- Footer -->
   <footer>
     <span class="copyright" role="presentation">
-      &copy; 2016 Colmar Academy. All rights reserved.
-    </span>
-    <nav class="info">
-      <a href="#">Terms</a>
-      <a href="#">Privacy</a>
-    </nav>
+	  &copy; 2016 Colmar Academy. All rights reserved.
+	</span>
+	<nav class="info">
+	  <a href="#">Terms</a>
+	  <a href="#">Privacy</a>
+	</nav>
   </footer>
   
 </body>
